@@ -36,7 +36,10 @@ const ingredientData = [
   iron: 12,
   total_fat: 14,
   carbs: 12,
-  sugars: 18
+  sugars: 18,
+  img: "img/tomato1.jpeg",
+  img2: "img/tomato2.jpeg",
+  img3: "img/tomato3.jpg"
 },
 
 
@@ -67,6 +70,9 @@ const ingredientData = [
   total_fat: 14,
   carbs: 12,
   sugars: 18,
+  img: "img/carrot1.jpeg",
+  img2: "img/carrot2.jpeg",
+  img3: "img/carrot3.jpeg"
 },
 
 {
@@ -96,6 +102,9 @@ const ingredientData = [
   total_fat: 14,
   carbs: 12,
   sugars: 18,
+  img: "img/milk1.jpeg",
+  img2: "img/milk2.jpeg",
+  img3: "img/milk3.jpeg"
 }
 
 ];

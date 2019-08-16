@@ -92,8 +92,11 @@ if(result === undefined){
                               <li>Potassium: ${result.potassium} % USRDA</li>
                               <li>Iron: ${result.iron} % USRDA</li>
                            </ul>
-
-
+                           <div id="imageDiv">
+                            <img src="${result.img}" alt="user interface picture"/>
+                            <img src="${result.img2}" alt="user interface picture"/>
+                            <img src="${result.img3}" alt="user interface picture"/>
+                           </div>
 
                                 `);
   $('#nutrientInfo').append(nutrientInfoP);
@@ -123,7 +126,7 @@ if(result.state === 'Liquid'){
       <input type="radio"  name="liquidRadio" value="Teaspoons"> Teaspoons<br>
       <input type="radio"  name="liquidRadio" value="Tablespoons"> Tablespoons<br>
 
-      <input type='text' id='amountTextInput' placeholder="Numerical value">
+      <input type='text' id='amountTextInput' placeholder="Amount">
       <input type="checkbox" id="checkbox" title="Commit Selection" onclick="populateIngredientArray(ingredientData[${resultIndex}], 'checkbox', ingredientSearchResult, amountTextInput)">
       <div id='add'>
             <button id='addButton' onclick="addItem(ingredientData[${resultIndex}])">Add this item</button>
@@ -328,7 +331,7 @@ const calculateNutrient2 = objectArray => {
     const measurementUnit = objectArray[i].unit;
 
     htmlData += '<h2>Ingredient : ' + ingredientName + '</h2>';
-    htmlData += '<ul><li>Amount : ' + amount + ' ' + measurementUnit + '</li>';
+    htmlData += '<ul><li class="outputLi">Amount : ' + amount + ' ' + measurementUnit + '</li>';
 
     //  add remaining nutrients as time allows
     const vitamin_A = objectArray[i].vitamin_A;
@@ -361,8 +364,8 @@ const calculateNutrient2 = objectArray => {
     const modifiedPotassium = modifiedNutrient(potassium, amount);
 
     // print each single ingredient nutrient value to the page.
-    htmlData += '<li>Vitamin A : ' + modifiedVitaminA + ' % USRDA</li>';
-    htmlData += '<li>Potassium : ' + modifiedPotassium + ' % USRDA</li>';
+    htmlData += '<li class="outputLi">Vitamin A : ' + modifiedVitaminA + ' % USRDA</li>';
+    htmlData += '<li class="outputLi">Potassium : ' + modifiedPotassium + ' % USRDA</li>';
 
     // uses parseFloat() to store string as a float so that we can add multiple sources of each nutrient from each ingredient object pushed to the objectArray.
     total_Vitamin_A += parseFloat(modifiedVitaminA);
@@ -376,6 +379,12 @@ const calculateNutrient2 = objectArray => {
 
     htmlData += '<h3>Total Vitamin A for this meal satisfies ' + modifiedNutrientTotal(total_Vitamin_A) + ' % USRDA.</h3>';
     htmlData += '<h3>Total Potassium for this meal satisfies ' + modifiedNutrientTotal(total_Potassium) + ' % USRDA.</h3>';
+
+
+
+    // jQuery that clears the div so that new content may be displayed.
+    $('#nutrientInfo').hide().delay(1000).slideDown().html('<img src="img/header1.jpeg" class="header1"/>');
+
 
     // this function prints to the outputDiv div on the html page.
     print1(htmlData);
