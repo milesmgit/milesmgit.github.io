@@ -67,32 +67,35 @@ if(result === undefined){
   ingredientSearchResult.innerHTML = "Ingredient : " + result.ingredient;
 
   // building the nutrientInfo html for the header area
-  const nutrientInfoP = $(`<p>${result.ingredient}</p>
+  const nutrientInfoP = $(`
                            <ul class="inlineUl">
+                              <li>Ingredient: ${result.ingredient}</li>
+                              <li>Base Unit Measurement: ${result.unit}</li>
                               <li>Calories: ${result.calories}</li>
+                              <li>Total Fat: ${result.total_fat} % USRDA</li>
+                              <li>Carbs: ${result.carbs} % USRDA</li>
+                              <li>Sugars: ${result.sugars} Grams</li>
                               <li>Vitamin A: ${result.vitamin_A} % USRDA</li>
-                              <li>Vitamin A: ${result.potassium} % USRDA</li>
+                              <li>Vitamin C: ${result.vitamin_C} % USRDA</li>
+                              <li>Vitamin D: ${result.vitamin_D} % USRDA</li>
+                              <li>Vitamin E: ${result.vitamin_E} % USRDA</li>
+                              <li>Vitamin K: ${result.vitamin_K} % USRDA</li>
+                              <li>Thiamin: ${result.thiamin} % USRDA</li>
+                              <li>Riboflavin: ${result.riboflavin} % USRDA</li>
+                              <li>Niacin: ${result.niacin} % USRDA</li>
+                              <li>Vitamin B6: ${result.vitamin_B6} % USRDA</li>
+                              <li>Folic Acid: ${result.folic_Acid} % USRDA</li>
+                              <li>Vitamin B12: ${result.vitamin_B12} % USRDA</li>
+                              <li>Biotin: ${result.biotin} % USRDA</li>
+                              <li>Pantothenic Acid: ${result.pantothenic_Acid} % USRDA</li>
+                              <li>Magnesium: ${result.magnesium} % USRDA</li>
+                              <li>Potassium: ${result.potassium} % USRDA</li>
+                              <li>Iron: ${result.iron} % USRDA</li>
                            </ul>
-                           <ul class="inlineUl">
-                              <li>Calories: ${result.calories}</li>
-                              <li>Vitamin A: ${result.vitamin_A} % USRDA</li>
-                              <li>Vitamin A: ${result.potassium} % USRDA</li>
-                           </ul>
-                           <ul class="inlineUl">
-                              <li>Calories: ${result.calories}</li>
-                              <li>Vitamin A: ${result.vitamin_A} % USRDA</li>
-                              <li>Vitamin A: ${result.potassium} % USRDA</li>
-                           </ul>
-                           <ul class="inlineUl">
-                              <li>Calories: ${result.calories}</li>
-                              <li>Vitamin A: ${result.vitamin_A} % USRDA</li>
-                              <li>Vitamin A: ${result.potassium} % USRDA</li>
-                           </ul>
-                           <ul class="inlineUl">
-                              <li>Calories: ${result.calories}</li>
-                              <li>Vitamin A: ${result.vitamin_A} % USRDA</li>
-                              <li>Vitamin A: ${result.potassium} % USRDA</li>
-                           </ul>`);
+
+
+
+                                `);
   $('#nutrientInfo').append(nutrientInfoP);
 
 
