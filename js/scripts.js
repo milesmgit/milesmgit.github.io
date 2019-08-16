@@ -52,12 +52,60 @@ console.log(resultIndex);
 
 // const ingredientSearchResult = document.getElementById('ingredientSearchResult');
 
+// this bit of pure javaScript clears the div so that a new element may be displayed
+// const clearDiv = document.getElementById('nutrientInfo');
+// clearDiv.innerHTML = '';
+
+
+// jQuery that clears the div so that new content may be displayed.
+$('#nutrientInfo').html('');
+
 // display message to user according to search result.
 if(result === undefined){
   ingredientSearchResult.innerHTML = searchInput.value + " is not in our database at this time.  Please search again.";
 } else {   // preface inquiries with result to get the returned search item: example.  result.ingredient or result.unit
   ingredientSearchResult.innerHTML = "Ingredient : " + result.ingredient;
+
+  // building the nutrientInfo html for the header area
+  const nutrientInfoP = $(`<p>${result.ingredient}</p>
+                           <ul class="inlineUl">
+                              <li>Calories: ${result.calories}</li>
+                              <li>Vitamin A: ${result.vitamin_A} % USRDA</li>
+                              <li>Vitamin A: ${result.potassium} % USRDA</li>
+                           </ul>
+                           <ul class="inlineUl">
+                              <li>Calories: ${result.calories}</li>
+                              <li>Vitamin A: ${result.vitamin_A} % USRDA</li>
+                              <li>Vitamin A: ${result.potassium} % USRDA</li>
+                           </ul>
+                           <ul class="inlineUl">
+                              <li>Calories: ${result.calories}</li>
+                              <li>Vitamin A: ${result.vitamin_A} % USRDA</li>
+                              <li>Vitamin A: ${result.potassium} % USRDA</li>
+                           </ul>
+                           <ul class="inlineUl">
+                              <li>Calories: ${result.calories}</li>
+                              <li>Vitamin A: ${result.vitamin_A} % USRDA</li>
+                              <li>Vitamin A: ${result.potassium} % USRDA</li>
+                           </ul>
+                           <ul class="inlineUl">
+                              <li>Calories: ${result.calories}</li>
+                              <li>Vitamin A: ${result.vitamin_A} % USRDA</li>
+                              <li>Vitamin A: ${result.potassium} % USRDA</li>
+                           </ul>`);
+  $('#nutrientInfo').append(nutrientInfoP);
+
+
+
+
+
+  nutrientInfoP.hide().delay(1000).slideDown();
+
+
 }
+
+
+
 
 // test for <state> and build out an html element list
 if(result.state === 'Liquid'){
@@ -98,6 +146,10 @@ if(result.state === 'Liquid'){
   `;
 }
 });
+
+
+
+
 
 
 // 3)  this function informs the values of the ingredient object.
