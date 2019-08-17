@@ -16,8 +16,8 @@ body {
 
 
 div#output {
-  margin: 0px ;
-  padding: 0 0px 0 20px;
+  margin: 0px 20px 0 0;
+  padding: 0 0px 0 0px;
   display: inline-block;
   height: 400px;
   width: 100%;
