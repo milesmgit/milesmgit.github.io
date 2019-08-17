@@ -20,7 +20,7 @@ div#output {
   margin: 0px 20px 0 0;
   padding: 0 0 0 0px;
   display: inline-block;
-  height: 900px;
+  height: 1000px;
   width: 100%;
   background-image: linear-gradient(green, yellow, orange, red);
   overflow: scroll;    /*   */
@@ -123,10 +123,17 @@ div.inputGroup {
 
 .radio {
   width: 40px;
+
 }
+
 
 label {
   font-size: 40px;
+
+}
+
+input[type="radio"]{
+  margin: 10px 10px 50px 10px;
 }
 
 
