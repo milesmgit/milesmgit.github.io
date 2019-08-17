@@ -27,9 +27,6 @@ div#header {
   padding: .2em .2em;
 
   height: 420px;
-  background-color: black;
-  color: lime;
-
 
 
   text-align: center;
@@ -45,8 +42,8 @@ div#nutrientInfo {
   padding: .2em .2em;
   width: 100%;
   height: 420px;
-  background-color: black;
-  color: lime;
+  background-image: linear-gradient(green, yellow, orange, red);
+  color: black;
   overflow: scroll;
 
 }
@@ -82,12 +79,29 @@ img {
   padding: 40px;
 }
 
-img.header1 {
-  display: block;
-  width: 80%;
-  max-height: 330px;
-  padding: 40px;
+
+/* The animation code */
+@keyframes example {
+  0%   {background-color: green;}
+  25%  {background-color: yellow;}
+  50%  {background-color: orange;}
+  100% {background-color: red;}
 }
+
+/* The element to apply the animation to */
+img.header1 {
+  width: 95%;
+  height: 380px;
+  margin-top: 10px;
+  background-color: lime;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
 
 ol {
   list-style: decimal;
