@@ -39,9 +39,18 @@ div#selector {
 
 div#stagingDiv li {
   text-align: left;
-  max-width: 300px;
-  margin: 20px 0;
+  max-width: 800px;
+  margin: 20px 0 30px 40px;
+  font-size: 40px;
 
+}
+
+
+button.remove {
+  height: 86px;
+  width: 226px;
+  font-size: 30px;
+  float: right;
 }
 
 
@@ -137,6 +146,9 @@ p#ingredientSearchResult {
   font-size: 40px;
 }
 
+h1, h2, h3 {
+  padding: 30px;
+}
 
 ul {
   padding-left: 0;
@@ -184,13 +196,6 @@ img.header1 {
 
 
 
-
-
-ol {
-  list-style: decimal;
-
-}
-
 li {
   width: 90%;
   margin: 10px auto;
@@ -198,11 +203,12 @@ li {
   padding: .5rem;
 }
 
+
 .outputLi {
   width: 90%;
   margin: 10px 10px;
   text-align: left;
-  padding: .5rem;
+  padding: 2.8rem 0 2.8rem 2.8rem;
 
 }
 
@@ -232,7 +238,7 @@ li {
 
 
 
-#searchButton, #calculateButton, #addButton{
+#searchButton, #calculateButton, #addButton, .remove{
   background-image: linear-gradient(yellow, orange);
   color:#000;
   border:none;
@@ -301,10 +307,4 @@ input#amountTextInput {
   position: relative;
   top: 26px;
   margin-left: 40px;
-}
-
-
-
-button.remove {
-  float: right;
 }
