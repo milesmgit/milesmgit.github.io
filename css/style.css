@@ -5,10 +5,14 @@ body {
   font-family: 'Lato', sans-serif;
   padding: .5em;
   line-height: 1.5;
-  background: white;
   width: 100%;
 
 }
+
+
+
+
+
 
 
 div#output {
@@ -40,6 +44,7 @@ div#header {
   height: 420px;
   text-align: center;
   width: 100%;
+  margin: 0;
 }
 
 div#nutrientInfo {
@@ -70,6 +75,7 @@ div#nutrientInfo {
   animation-name: examples;
   animation-duration: 40s;
   animation-iteration-count: infinite;
+
 }
 
 
