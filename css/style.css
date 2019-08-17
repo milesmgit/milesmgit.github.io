@@ -45,8 +45,28 @@ div#nutrientInfo {
   background-image: linear-gradient(green, yellow, orange, red);
   color: black;
   overflow: scroll;
-
 }
+
+
+/* The animation code */
+@keyframes examples {
+  0%   {background-image: linear-gradient(green, lime);}
+  25%  {background-image: linear-gradient(yellow, orange);}
+  50%  {background-image: linear-gradient(lime, yellow);}
+  100% {background-image: linear-gradient(orange, yellow, red);}
+}
+
+/* The element to apply the animation to */
+div#nutrientInfo {
+  animation-name: examples;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+
 
 #nutrientInfo p {
   margin: 20px 0 20px 20px;
