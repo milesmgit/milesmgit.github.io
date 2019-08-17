@@ -17,13 +17,12 @@ div#output {
 }
 
 div#selector {
-  display: inline;
-  position: relative;
-  top: 35px;
-  right: 400px;
-  float: right;
+
+
 
   
+
+
 }
 
 div#stagingDiv li {
@@ -167,24 +166,24 @@ li {
 
 #searchButton {
 
-  height: 36px;
+  height: 30px;
   position: relative;
-  top: -4px;
+  top: -2px;
 }
 
 
 input#searchInput {
 
   margin: 20px 0;
-  height: 30px;
-  font-size: 26px;
+  height: 24px;
+  font-size: 20px;
 }
 
 input#amountTextInput {
 
   margin: 20px 0;
-  height: 30px;
-  font-size: 26px;
+  height: 24px;
+  font-size: 20px;
 }
 
 

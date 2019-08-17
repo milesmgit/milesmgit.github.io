@@ -24,13 +24,24 @@
     </div>
 
 
+
+
 	    <div id='output'>
 
 	      <input type="text" id="searchInput" placeholder="Search Ingredient">
 	      <button id="searchButton">Search</button>
+				<div id="selector">
+					<select id="menu" name="ingredients">
+						<option value="carrot">Carrot</option>
+						<option value="milk">Milk</option>
+						<option value="tomato">Tomato</option>
+					</select>
+				</div>
+				
 	      <p id='ingredientSearchResult'>
 
 	      </p>
+
 
 	      <div id="stateHTML">
 
@@ -51,16 +62,10 @@
 	    </div>
 
 
-			</div>
 
-			<div id="selector">
-				<select id="menu" name="ingredients">
-					<option value="carrot">Carrot</option>
-					<option value="milk">Milk</option>
-					<option value="tomato">Tomato</option>
-				</select>
-			</div>
-		
+
+
+
 
   <script src="js/data.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
