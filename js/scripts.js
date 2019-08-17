@@ -245,6 +245,12 @@ const addItem = (ingredientArray) => {
 
   checkBox = document.getElementById('checkbox');
 
+
+  if(amountTextInput.value = ' '){
+    alert("Please enter a value and then click the checkbox before clicking add item button.");
+  }
+
+
   if (checkBox.checked === true){
 
     // arrow function ES2015 for a search result: i am comparing the result of the current ingredientArray name against
@@ -255,7 +261,9 @@ const addItem = (ingredientArray) => {
     const result1 = stagingIngredientArray.find( ingredient => ingredient.name === ingredientArray.name.toLowerCase());
 
     console.log(result1);
-
+    if(amountTextInput.value = ' '){
+      alert("Please enter a value and then click the checkbox before clicking add item button.");
+    }
     if(result1 === undefined){
       stagingIngredientArray.push(ingredientArray);
       const $itemRemoveButton = (`<li>${ingredientArray.ingredient}<button class="remove">Remove</button></li>`);
