@@ -75,11 +75,6 @@ div#header {
 
 
 
-
-
-
-
-
 div#nutrientInfo {
 
   display: flex;
@@ -212,23 +207,75 @@ li {
 }
 
 #addButton {
-  height: 36px;
-  margin-bottom: 10px;
+  height: 124px;
+  width: 220px;
+  margin: 50px 0 50px 0px;
+  font-size: 40px;
 }
 
 #calculateButton {
-  height: 36px;
+  height: 124px;
+  width: 220px;
+  margin: 50px 0 50px 0px;
+  font-size: 40px;
 
 }
 
 #searchButton {
 
-  height: 100px;
+
   width: 190px;
   font-size: 50px;
   position: relative;
-  top: 0px;
+  top: -6px;
 }
+
+
+
+#searchButton, #calculateButton, #addButton{
+  background-image: linear-gradient(yellow, orange);
+  color:#000;
+  border:none;
+  position:relative;
+  height:100px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+#searchButton:hover, #calculateButton:hover, #addButton:hover{
+  background:#fff;
+  color:blue;
+}
+#searchButton:before,#searchButton:after, #calculateButton:before, #calculateButton:after, #addButton:before, #addButton:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+#searchButton:after #addButton:after, #calculateButton:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+#searchButton:hover:before,#searchButton:hover:after, #calculateButton:hover:before, #calculateButton:hover:after, #addButton:hover:before, #addButton:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+
+
+
+
+
 
 
 input#searchInput {
@@ -242,17 +289,18 @@ input#searchInput {
 
 input#amountTextInput {
 
-  margin: 20px 0;
-  height: 24px;
-  font-size: 20px;
+  margin: 40px 0;
+  height: 84px;
+  font-size: 50px;
 }
 
 
 #checkbox {
-  height: 36px;
-  width: 36px;
+  height: 86px;
+  width: 86px;
   position: relative;
-  top: 10px;
+  top: 26px;
+  margin-left: 40px;
 }
 
 

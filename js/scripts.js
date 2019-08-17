@@ -16,7 +16,10 @@ selector.addEventListener("change", function(){
   searchInput.value = userChoice;
 });
 
-
+selector.addEventListener("click", function(){
+  let userChoice = selector.options[selector.selectedIndex].value;
+  searchInput.value = userChoice;
+});
 
 
 
