@@ -150,6 +150,23 @@ h1, h2, h3 {
   padding: 30px;
 }
 
+
+
+h1 {
+  font-size: 150px;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 75px;
+}
+
+
+
+
 ul {
   padding-left: 0;
   list-style:  none;
@@ -209,7 +226,7 @@ li {
   margin: 10px 10px;
   text-align: left;
   padding: 2.8rem 0 2.8rem 2.8rem;
-
+  font-size: 60px;
 }
 
 #addButton {
