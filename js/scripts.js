@@ -6,6 +6,21 @@ const searchInput = document.getElementById("searchInput");
 
 
 
+// create ingredientList
+
+
+const selector = document.getElementById('menu');
+
+selector.addEventListener("click", function(){
+  let userChoice = selector.options[selector.selectedIndex].value;
+  searchInput.value = userChoice;
+});
+
+
+
+
+
+
 // 1)  Execute a function when the user releases a key on the keyboard, or
 // presses the search button.
 searchInput.addEventListener("keyup", function(event) {
@@ -42,6 +57,7 @@ searchButton.addEventListener('click', () => {
 // }
 //
 // console.log(ingredientData.find(isResult));
+
 
 // arrow function ES2015 for a search result pending on user input via a search text box.
 const result = ingredientData.find( ingredient => ingredient.name === searchInput.value.toLowerCase());
@@ -100,18 +116,9 @@ if(result === undefined){
 
                                 `);
   $('#nutrientInfo').append(nutrientInfoP);
-
-
-
-
-
   nutrientInfoP.hide().delay(1000).slideDown();
 
-
 }
-
-
-
 
 // test for <state> and build out an html element list
 if(result.state === 'Liquid'){

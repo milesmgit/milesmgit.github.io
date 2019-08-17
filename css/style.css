@@ -6,12 +6,24 @@ body {
   padding: .45em .65em 1em;
   line-height: 1.5;
   background: white;
-  border: 1px dotted #637a91;
+
 }
 
 
 div#output {
   margin: 20px 0px;
+  display: inline-block;
+
+}
+
+div#selector {
+  display: inline;
+  position: relative;
+  top: 35px;
+  right: 400px;
+  float: right;
+
+  
 }
 
 div#stagingDiv li {
@@ -42,7 +54,7 @@ div#nutrientInfo {
   padding: .2em .2em;
   width: 100%;
   height: 420px;
-  background-image: linear-gradient(green, yellow, orange, red);
+  /* background-image: linear-gradient(green, yellow, orange, red); */
   color: black;
   overflow: scroll;
 }
