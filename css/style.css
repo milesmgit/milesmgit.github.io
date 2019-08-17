@@ -11,16 +11,11 @@ body {
 }
 
 
-
-
-
-
-
 div#output {
   margin: 0px 20px 0 0;
   padding: 0 0 0 0px;
   display: inline-block;
-  height: 1000px;
+  height: 1300px;
   width: 100%;
   background-image: linear-gradient(green, yellow, orange, red);
   overflow: scroll;    /*   */
@@ -158,14 +153,14 @@ ul {
 
 ul.inlineUl {
   display: inline-block;
-  width: 35%;
+  width: 65%;
 
 }
 
 
 img {
   display: block;
-  width: 65%;
+  width: 35%;
   width: 450px;
   max-height: 300px;
   padding: 40px;

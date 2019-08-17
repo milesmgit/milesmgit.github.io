@@ -11,7 +11,7 @@ const searchInput = document.getElementById("searchInput");
 
 const selector = document.getElementById('menu');
 
-selector.addEventListener("click", function(){
+selector.addEventListener("change", function(){
   let userChoice = selector.options[selector.selectedIndex].value;
   searchInput.value = userChoice;
 });
