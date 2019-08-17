@@ -128,10 +128,11 @@ if(result.state === 'Liquid'){
 
   // create html for this group.
   stateHTML.innerHTML = `
-      <input type="radio"  name="liquidRadio" value="Fluid Ounces" checked> Fluid Ounces<br>
-      <input type="radio"  name="liquidRadio" value="Milliliters"> Milliliters<br>
-      <input type="radio"  name="liquidRadio" value="Teaspoons"> Teaspoons<br>
-      <input type="radio"  name="liquidRadio" value="Tablespoons"> Tablespoons<br>
+    <div class="inputGroup">
+      <input type="radio"  id="radio1" class="radio" name="liquidRadio" value="Fluid Ounces" checked><label for="radio1">Fluid Ounces</label><br>
+      <input type="radio"  id="radio2" class="radio" name="liquidRadio" value="Milliliters"><label for="radio2">Milliliters</label><br>
+      <input type="radio"  id="radio3" class="radio" name="liquidRadio" value="Teaspoons"><label for="radio3">Teaspoons</label><br>
+      <input type="radio"  id="radio4" class="radio" name="liquidRadio" value="Tablespoons"><label for="radio4">Tablespoons</label><br>
 
       <input type='text' id='amountTextInput' placeholder="Amount">
       <input type="checkbox" id="checkbox" title="Commit Selection" onclick="populateIngredientArray(ingredientData[${resultIndex}], 'checkbox', ingredientSearchResult, amountTextInput)">
@@ -141,12 +142,14 @@ if(result.state === 'Liquid'){
       <div id='calculate'>
             <button id='calculateButton' onclick="calculateNutrient2(stagingIngredientArray)">Calculate Meal</button>
       </div>
+    <div>
   `;
 } else {
 
     stateHTML.innerHTML = `
-      <input type="radio"  name="solidRadio" value="Ounces" checked>  Ounces<br>
-      <input type="radio"  name="solidRadio" value="Grams"> Grams<br>
+    <div class="inputGroup">
+      <input type="radio"  id="radio5" class="radio" name="solidRadio" value="Ounces" checked><label for="radio5">Ounces</label><br>
+      <input type="radio"  id="radio6" class="radio" name="solidRadio" value="Grams"><label for="radio6">Grams</label><br>
 
       <input type='text' id='amountTextInput'>
       <input type="checkbox" id="checkbox" title="Commit Selection" onclick="populateIngredientArray(ingredientData[${resultIndex}], 'checkbox', ingredientSearchResult, amountTextInput)">
@@ -156,6 +159,7 @@ if(result.state === 'Liquid'){
       <div id='calculateDiv'>
             <button id='calculateButton' onclick="calculateNutrient2(stagingIngredientArray)">Calculate Meal</button>
       </div>
+    </div>
   `;
 }
 });

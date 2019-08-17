@@ -18,17 +18,27 @@ body {
 
 div#output {
   margin: 0px 20px 0 0;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 0px;
   display: inline-block;
-  height: 400px;
+  height: 900px;
   width: 100%;
   background-image: linear-gradient(green, yellow, orange, red);
   overflow: scroll;    /*   */
 
 }
 
+
+select {
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+
+  margin-left: 40px;
+}
+
+
 div#selector {
 
+  -webkit-appearance: none;
 
 }
 
@@ -107,7 +117,17 @@ div#nutrientInfo {
 }
 
 
+div.inputGroup {
+  margin: 0 0 0 40px;
+}
 
+.radio {
+  width: 40px;
+}
+
+label {
+  font-size: 40px;
+}
 
 
 
@@ -116,7 +136,8 @@ div#nutrientInfo {
 }
 
 p#ingredientSearchResult {
-  margin: 20px 0 5px 0;
+  margin: 60px 0 40px 40px;
+  font-size: 40px;
 }
 
 
@@ -200,17 +221,21 @@ li {
 
 #searchButton {
 
-  height: 30px;
+  height: 100px;
+  width: 190px;
+  font-size: 50px;
   position: relative;
-  top: -2px;
+  top: 0px;
 }
 
 
 input#searchInput {
 
-  margin: 20px 0;
-  height: 24px;
-  font-size: 20px;
+  margin: 40px 40px;
+  padding: 10px;
+  height: 84px;
+  font-size: 50px;
+
 }
 
 input#amountTextInput {
