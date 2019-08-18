@@ -266,31 +266,13 @@ li {
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
+  border-radius: 20%;
 }
-#searchButton:hover, #calculateButton:hover, #addButton:hover{
+#searchButton:hover, #calculateButton:hover, #addButton:hover, .remove:hover{
   background:#fff;
   color:blue;
 }
-#searchButton:before,#searchButton:after, #calculateButton:before, #calculateButton:after, #addButton:before, #addButton:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #1AAB8A;
-  transition:400ms ease all;
-}
-#searchButton:after #addButton:after, #calculateButton:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-#searchButton:hover:before,#searchButton:hover:after, #calculateButton:hover:before, #calculateButton:hover:after, #addButton:hover:before, #addButton:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
+
 
 
 
