@@ -154,7 +154,7 @@ if(result.state === 'Liquid'){
       <input type="radio"  id="radio5" class="radio" name="solidRadio" value="Ounces" checked><label for="radio5">Ounces</label><br>
       <input type="radio"  id="radio6" class="radio" name="solidRadio" value="Grams"><label for="radio6">Grams</label><br>
 
-      <input type='text' id='amountTextInput'>
+      <input type='text' id='amountTextInput' placeholder="Amount">
       <input type="checkbox" id="checkbox" title="Commit Selection" onclick="populateIngredientArray(ingredientData[${resultIndex}], 'checkbox', ingredientSearchResult, amountTextInput)">
       <div id='add'>
             <button id='addButton' onclick="addItem(ingredientData[${resultIndex}])">Add this item</button>
@@ -259,7 +259,7 @@ const addItem = (ingredientArray) => {
     const result1 = stagingIngredientArray.find( ingredient => ingredient.name === ingredientArray.name.toLowerCase());
 
     console.log(result1);
-  
+
     if(result1 === undefined){
       stagingIngredientArray.push(ingredientArray);
       const $itemRemoveButton = (`<li>${ingredientArray.ingredient}<button class="remove">Remove</button></li>`);
