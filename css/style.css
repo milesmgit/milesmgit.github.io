@@ -255,7 +255,7 @@ li {
 
 
 
-#searchButton, #calculateButton, #addButton, .remove{
+#searchButton, #calculateButton, #addButton, button.remove{
   background-image: linear-gradient(yellow, orange);
   color:#000;
   border:none;
@@ -347,14 +347,14 @@ input#amountTextInput {
     margin-left: 40px;
   }
 
-  #searchButton, #calculateButton, #addButton, .remove{
+  #searchButton, #calculateButton, #addButton, button.remove{
     background-image: linear-gradient(yellow, orange);
     color:#000;
     border:none;
     position:relative;
     width: 80px;
     padding: 4px;
-    top: 2px;
+    top: 0px;
     height:44px;
     font-size:16px;
     cursor:pointer;
@@ -366,6 +366,10 @@ input#amountTextInput {
     top: -140px;
   }
 
+
+  button.remove {
+    top: 10px;
+  }
 
 
   select {
@@ -406,6 +410,16 @@ input#amountTextInput {
     font-size: 20px;
 
   }
+
+
+  li {
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    padding: .5rem;
+  }
+
+
 
 
 
