@@ -359,6 +359,13 @@ input#amountTextInput {
     border-radius: 20%;
   }
 
+  #calculateButton {
+    left: 200px;
+    top: -140px;
+  }
+
+
+
   select {
     font-family: Arial, sans-serif;
     font-size: 20px;
