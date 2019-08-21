@@ -308,3 +308,96 @@ input#amountTextInput {
   top: 26px;
   margin-left: 40px;
 }
+
+
+
+
+
+@media only screen and (min-width: 800px){
+
+
+
+
+  input#searchInput {
+
+
+    margin: 40px 40px;
+    padding: 10px;
+    height: 24px;
+    font-size: 20px;
+    width: 200px;
+
+  }
+
+  input#amountTextInput {
+
+    margin: 40px 0;
+    height: 24px;
+    font-size: 20px;
+  }
+
+
+  #checkbox {
+    height: 24px;
+    width: 36px;
+    position: relative;
+    top: 6px;
+    margin-left: 40px;
+  }
+
+  #searchButton, #calculateButton, #addButton, .remove{
+    background-image: linear-gradient(yellow, orange);
+    color:#000;
+    border:none;
+    position:relative;
+    width: 80px;
+    padding: 4px;
+    top: 2px;
+    height:44px;
+    font-size:16px;
+    cursor:pointer;
+    border-radius: 20%;
+  }
+
+  select {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 40px;
+  }
+
+
+  div#selector {
+
+    -webkit-appearance: none;
+
+  }
+
+  ul.inlineUl {
+    display: inline-block;
+    width: 35%;
+
+  }
+
+
+  img {
+    display: block;
+    width: 65%;
+    width: 450px;
+    max-height: 300px;
+    padding: 40px;
+  }
+
+
+  p#ingredientSearchResult {
+    margin: 60px 0 40px 40px;
+    font-size: 30px;
+  }
+
+  label {
+    font-size: 20px;
+
+  }
+
+
+
+}
