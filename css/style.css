@@ -423,4 +423,45 @@ input#amountTextInput {
 
 
 
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style:  none;
+
+
+  }
+
+
+  ul.inlineUl {
+    display: inline-block;
+    width: 65%;
+
+
+  }
+
+
+  .outputLi {
+    width: 90%;
+    margin: 10px 10px;
+    text-align: left;
+    padding: 2.8rem 0 2.8rem 2.8rem;
+    font-size: 20px;
+  }
+
+
+
+
+
+
 }
