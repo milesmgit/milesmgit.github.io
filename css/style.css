@@ -193,7 +193,7 @@ img {
 
 /* The animation code */
 @keyframes example {
-  0%   {background-color: green;}
+  0%   {background-color: orange;}
   25%  {background-color: yellow;}
   50%  {background-color: orange;}
   100% {background-color: lime;}
