@@ -275,7 +275,10 @@ li {
 
 
 
-
+div#stateHTML {
+  height: 420px;
+  border-bottom: 1px solid;
+}
 
 
 
