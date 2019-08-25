@@ -68,7 +68,7 @@ div#header {
 
 /* The animation code */
 @keyframes examples3 {
-  0%   {background-image: linear-gradient(green, lime);}
+  0%   {background-image: linear-gradient(yellow, lime);}
   25%  {background-image: linear-gradient(yellow, orange);}
   50%  {background-image: linear-gradient(lime, yellow);}
   100% {background-image: linear-gradient(orange, yellow, lime);}
@@ -101,7 +101,7 @@ div#nutrientInfo {
 
 /* The animation code */
 @keyframes examples {
-  0%   {background-image: linear-gradient(green, lime);}
+  0%   {background-image: linear-gradient(orange, lime);}
   25%  {background-image: linear-gradient(yellow, orange);}
   50%  {background-image: linear-gradient(lime, yellow);}
   100% {background-image: linear-gradient(orange, yellow, lime);}
