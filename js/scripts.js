@@ -157,7 +157,7 @@ if(result.state === 'Liquid'){
       <input type='text' id='amountTextInput' placeholder="Amount">
       <input type="checkbox" id="checkbox" title="Commit Selection" onclick="populateIngredientArray(ingredientData[${resultIndex}], 'checkbox', ingredientSearchResult, amountTextInput)">
       <div id='add'>
-            <button id='addButton' onclick="addItem(ingredientData[${resultIndex}])">Add this item</button>
+            <button id='addButton' onclick="addItem(ingredientData[${resultIndex}])">Add this Item</button>
       </div>
       <div id='calculateDiv'>
             <button id='calculateButton' onclick="calculateNutrient2(stagingIngredientArray)">Calculate Meal</button>
