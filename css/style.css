@@ -15,7 +15,7 @@ div#output {
   margin: 0px 20px 0 0;
   padding: 0 0 0 0px;
   display: inline-block;
-  
+
   width: 100%;
   background-image: linear-gradient(green, yellow, orange, red);
   overflow: scroll;    /*   */
@@ -268,6 +268,7 @@ li {
   outline:none;
   border-radius: 20%;
 }
+
 #searchButton:hover, #calculateButton:hover, #addButton:hover, .remove:hover{
   background:#fff;
   color:blue;
@@ -286,6 +287,8 @@ div#stateHTML {
 
 
 
+
+
 input#searchInput {
 
   margin: 40px 40px;
@@ -295,6 +298,7 @@ input#searchInput {
   width: 400px;
 
 }
+
 
 input#amountTextInput {
 
@@ -321,14 +325,14 @@ input#amountTextInput {
 
 
 
-  input#searchInput {
+  input#searchInput, input#amountTextInput {
 
 
     margin: 40px 40px;
     padding: 10px;
     height: 24px;
     font-size: 20px;
-    width: 200px;
+    width: 400px;
 
   }
 
@@ -343,10 +347,10 @@ input#amountTextInput {
 
 
   #checkbox {
-    height: 24px;
-    width: 36px;
+    height: 44px;
+    width: 56px;
     position: relative;
-    top: 6px;
+    top: 16px;
     margin-left: 40px;
   }
 
@@ -355,7 +359,7 @@ input#amountTextInput {
     color:#000;
     border:none;
     position:relative;
-    width: 80px;
+    width: 180px;
     padding: 4px;
     top: 0px;
     height:44px;
@@ -377,7 +381,7 @@ input#amountTextInput {
 
   select {
     font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     margin-left: 40px;
   }
 
@@ -410,7 +414,7 @@ input#amountTextInput {
   }
 
   label {
-    font-size: 20px;
+    font-size: 30px;
 
   }
 
