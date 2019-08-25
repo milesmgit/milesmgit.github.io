@@ -325,13 +325,13 @@ input#amountTextInput {
 
 
 
-  input#searchInput, input#amountTextInput {
+  input#searchInput {
 
 
     margin: 40px 40px;
     padding: 10px;
-    height: 24px;
-    font-size: 20px;
+    height: 54px;
+    font-size: 46px;
     width: 400px;
 
   }
@@ -339,18 +339,19 @@ input#amountTextInput {
   input#amountTextInput {
 
     margin: 40px 0;
-    height: 24px;
-    font-size: 20px;
+    height: 54px;
+    font-size: 46px;
     padding: 10px;
+    width: 400px;
 
   }
 
 
   #checkbox {
-    height: 44px;
-    width: 56px;
+    height: 74px;
+    width: 74px;
     position: relative;
-    top: 16px;
+    top: 19px;
     margin-left: 40px;
   }
 
@@ -361,8 +362,8 @@ input#amountTextInput {
     position:relative;
     width: 180px;
     padding: 4px;
-    top: 0px;
-    height:44px;
+    top: -10px;
+    height:84px;
     font-size:16px;
     cursor:pointer;
     border-radius: 20%;
@@ -370,7 +371,7 @@ input#amountTextInput {
 
   #calculateButton {
     left: 200px;
-    top: -140px;
+    top: -194px;
   }
 
 
@@ -414,7 +415,7 @@ input#amountTextInput {
   }
 
   label {
-    font-size: 30px;
+    font-size: 40px;
 
   }
 
